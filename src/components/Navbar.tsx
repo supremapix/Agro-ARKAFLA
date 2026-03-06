@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'motion/react';
 const Logo = ({ className = "" }: { className?: string }) => (
   <div className={`flex items-center gap-3 ${className}`}>
     <img 
-      src="https://agroarkafla.com.br/assets/images/agro-arkafla-castro-fazenda-de-agrtonegocios-2000x1079.png" 
+      src="https://castro.agroarkafla.com.br/assets/images/agro-arkafla-castro-fazenda-de-agrtonegocios-2000x1079.png" 
       alt="Agro Arkafla Logo" 
       className="h-16 w-auto object-contain"
       referrerPolicy="no-referrer"
@@ -31,6 +31,7 @@ export const Navbar = () => {
     { name: 'Quem Somos', href: '/quem-somos' },
     { name: 'Atividades', href: '/atividades' },
     { name: 'Logística', href: '/logistica' },
+    { name: 'Galeria', href: '/galeria' },
     { name: 'Contato', href: '/contato' },
   ];
 

@@ -38,7 +38,7 @@ export const Home = () => {
       <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://agroarkafla.com.br/assets/images/foto-fardos-palha-de-trigo-666x499.jpg" 
+            src="https://castro.agroarkafla.com.br/assets/images/foto-fardos-palha-de-trigo-666x499.jpg" 
             alt="Fazenda em Castro PR" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -121,10 +121,15 @@ export const Home = () => {
               <Link to="/quem-somos" className="inline-flex items-center gap-2 font-black text-agri-green text-lg hover:gap-4 transition-all">
                 Conheça nossa história <ArrowRight />
               </Link>
+              <div className="mt-4">
+                <Link to="/galeria" className="inline-flex items-center gap-2 font-bold text-gray-500 hover:text-agri-green transition-all">
+                  Ver galeria de fotos <ArrowRight size={16} />
+                </Link>
+              </div>
             </motion.div>
             <div className="lg:w-1/2">
               <img 
-                src="https://agroarkafla.com.br/assets/images/agro-gado-holandes-castro-pr-castro-fazenda-de-gado-794x523.png" 
+                src="https://castro.agroarkafla.com.br/assets/images/agro-gado-holandes-castro-pr-castro-fazenda-de-gado-794x523.png" 
                 alt="Gado Holandês" 
                 className="rounded-3xl shadow-2xl"
                 referrerPolicy="no-referrer"
@@ -143,9 +148,9 @@ export const Home = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: "Agricultura", icon: <Wheat />, link: "/atividades#agricultura", img: "https://agroarkafla.com.br/assets/images/fotos-agricultura-254x191.jpg" },
-              { title: "Pecuária", icon: <Beef />, link: "/atividades#pecuaria", img: "https://agroarkafla.com.br/assets/images/agro-gado-holandes-castro-pr-castro-fazenda-de-gado-794x523.png" },
-              { title: "Silvicultura", icon: <Trees />, link: "/atividades#silvicultura", img: "https://agroarkafla.com.br/assets/images/agro-arkafla-silvicultura-1-183x217.jpg" }
+              { title: "Agricultura", icon: <Wheat />, link: "/atividades#agricultura", img: "https://castro.agroarkafla.com.br/assets/images/fotos-agricultura-254x191.jpg" },
+              { title: "Pecuária", icon: <Beef />, link: "/atividades#pecuaria", img: "https://castro.agroarkafla.com.br/assets/images/agro-gado-holandes-castro-pr-castro-fazenda-de-gado-794x523.png" },
+              { title: "Silvicultura", icon: <Trees />, link: "/atividades#silvicultura", img: "https://castro.agroarkafla.com.br/assets/images/agro-arkafla-silvicultura-1-183x217.jpg" }
             ].map(item => (
               <Link key={item.title} to={item.link} className="group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all">
                 <div className="h-48 overflow-hidden">

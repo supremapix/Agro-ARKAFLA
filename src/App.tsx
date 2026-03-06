@@ -9,6 +9,7 @@ import { Atividades } from './pages/Atividades';
 import { Logistica } from './pages/Logistica';
 import { Contato } from './pages/Contato';
 import { Locality } from './pages/Locality';
+import { Galeria } from './pages/Galeria';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -26,7 +27,7 @@ export default function App() {
     "name": "Agro Arkafla",
     "alternateName": "Fazenda Fundamento",
     "url": "https://www.agroarkafla.com.br/",
-    "logo": "https://agroarkafla.com.br/assets/images/agro-arkafla-castro-fazenda-de-agrtonegocios-2000x1079.png",
+    "logo": "https://castro.agroarkafla.com.br/assets/images/agro-arkafla-castro-fazenda-de-agrtonegocios-2000x1079.png",
     "description": "Fazenda agrícola em Castro, Paraná. Especializada em Agricultura, Pecuária e Silvicultura, com foco em Gado Holandês e Silagem Pré-Secada.",
     "address": {
       "@type": "PostalAddress",
@@ -68,6 +69,7 @@ export default function App() {
             <Route path="/atividades" element={<Atividades />} />
             <Route path="/logistica" element={<Logistica />} />
             <Route path="/contato" element={<Contato />} />
+            <Route path="/galeria" element={<Galeria />} />
             <Route path="/localidade/:citySlug" element={<Locality />} />
             {/* Fallback */}
             <Route path="*" element={<Home />} />

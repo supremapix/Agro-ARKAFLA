@@ -7,7 +7,7 @@ export const Atividades = () => {
       id: "agricultura",
       title: "Agricultura",
       icon: <Wheat className="w-12 h-12" />,
-      image: "https://agroarkafla.com.br/assets/images/fotos-agricultura-254x191.jpg",
+      image: "https://castro.agroarkafla.com.br/assets/images/foto-colheita-trigo-254x191.jpg",
       description: "Safra de verão (soja, milho, feijão) e inverno (trigo, aveia branca, azevém). Parte da produção é transformada em silagem para o rebanho.",
       details: [
         "Tecnologia de precisão na semeadura e colheita",
@@ -21,7 +21,7 @@ export const Atividades = () => {
       id: "pecuaria",
       title: "Pecuária de Leite",
       icon: <Beef className="w-12 h-12" />,
-      image: "https://agroarkafla.com.br/assets/images/agro-gado-holandes-castro-pr-castro-fazenda-de-gado-794x523.png",
+      image: "https://castro.agroarkafla.com.br/assets/images/agro-gado-holandes-castro-pr-castro-fazenda-de-gado-794x523.png",
       description: "Produção de reprodutores, matrizes, embriões e prenhezes HPB PO. Garantia de 10.000kg de leite aos 305 dias de lactação no 1º parto.",
       details: [
         "Genética de ponta (Gado Holandês PO)",
@@ -35,7 +35,7 @@ export const Atividades = () => {
       id: "silvicultura",
       title: "Silvicultura",
       icon: <Trees className="w-12 h-12" />,
-      image: "https://agroarkafla.com.br/assets/images/agro-arkafla-silvicultura-1-183x217.jpg",
+      image: "https://castro.agroarkafla.com.br/assets/images/agro-arkafla-silvicultura-1-183x217.jpg",
       description: "Cultivo de florestas de eucalipto para madeira e pinus para resina em áreas recuperadas, auxiliando na biodiversidade.",
       details: [
         "Reflorestamento em áreas estratégicas",
@@ -130,9 +130,49 @@ export const Atividades = () => {
             </div>
             <div className="lg:w-1/2 relative">
               <img 
-                src="https://agroarkafla.com.br/assets/images/silagem-pre-secada-castro-agro-arkafla-254x337.jpg" 
+                src="https://castro.agroarkafla.com.br/assets/images/agro-arkafla-castro-pr-castro-silagem-pre-secada-1-794x523.png" 
                 alt="Silagem Agro Arkafla" 
                 className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Silagem Embalada Section */}
+        <section className="mt-24 bg-white rounded-[3rem] p-12 md:p-20 shadow-xl border border-gray-100">
+          <div className="flex flex-col lg:flex-row-reverse gap-16 items-center">
+            <div className="lg:w-1/2">
+              <h2 className="text-3xl font-black text-agri-black mb-6">Praticidade e Logística: Silagem Embalada</h2>
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                Nossa silagem pré-secada é embalada em fardos de alta densidade, protegidos por filme stretch especial. Isso permite o armazenamento a céu aberto e facilita o transporte para qualquer região, mantendo as propriedades nutricionais por longos períodos.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 bg-agri-green/10 text-agri-green rounded-xl flex items-center justify-center shrink-0">
+                    <ChevronRight size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-black text-agri-black">Fácil Armazenamento</h4>
+                    <p className="text-sm text-gray-500">Pode ser mantida ao ar livre sem perda de qualidade.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 bg-agri-green/10 text-agri-green rounded-xl flex items-center justify-center shrink-0">
+                    <ChevronRight size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-black text-agri-black">Zero Desperdício</h4>
+                    <p className="text-sm text-gray-500">Fardos individuais que facilitam o manejo diário.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/2">
+              <img 
+                src="https://castro.agroarkafla.com.br/assets/images/silagem-pr-secada-embalada-254x165.jpg" 
+                alt="Silagem Embalada" 
+                className="rounded-3xl shadow-lg w-full h-auto"
                 referrerPolicy="no-referrer"
               />
             </div>
