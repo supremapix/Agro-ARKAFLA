@@ -11,10 +11,10 @@ export const Atividades = () => {
       image: "https://castro.agroarkafla.com.br/assets/images/foto-colheita-trigo-254x191.jpg",
       description: "Safra de verão (soja, milho, feijão) e inverno (trigo, aveia branca, azevém). Parte da produção é transformada em silagem para o rebanho.",
       details: [
-        "Tecnologia de precisão na semeadura e colheita",
-        "Manejo integrado de pragas e doenças",
-        "Rotação de culturas para saúde do solo",
-        "Produção de grãos de alta qualidade para o mercado"
+        "Agricultura de precisão para máxima qualidade nutricional",
+        "Uma das maiores produtoras de pré-secado de aveia e azevém do Brasil",
+        "Produção de silagem de grão úmido de milho",
+        "Rotação de culturas e manejo integrado de pragas"
       ],
       color: "bg-agri-gold"
     },
@@ -25,10 +25,10 @@ export const Atividades = () => {
       image: "https://castro.agroarkafla.com.br/assets/images/agro-gado-holandes-castro-pr-castro-fazenda-de-gado-794x523.png",
       description: "Produção de reprodutores, matrizes, embriões e prenhezes HPB PO. Garantia de 10.000kg de leite aos 305 dias de lactação no 1º parto.",
       details: [
-        "Genética de ponta (Gado Holandês PO)",
-        "Nutrição balanceada com silagem própria",
-        "Bem-estar animal como prioridade",
-        "Monitoramento 24h da produção leiteira"
+        "Genética de ponta com uso de Clarifide® para melhoramento",
+        "Protocolos sanitários avançados (Excede® da Zoetis)",
+        "Nutrição balanceada com silagem própria de alta performance",
+        "450 vacas em ordenha gerando 18.000 litros de leite/dia"
       ],
       color: "bg-agri-black"
     },

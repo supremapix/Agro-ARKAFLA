@@ -120,7 +120,7 @@ export const Home = () => {
                 Tradição e Tecnologia no Campo
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Desde 1978, o Grupo Arkafla leva adiante o legado de excelência no agronegócio. Com sede em Castro, PR, somos referência na produção de leite, grãos e manejo florestal sustentável.
+                A <strong>Agropecuária Arkafla</strong> é uma referência em excelência no agronegócio, com sede na região de Castro/PR. Aliamos tradição familiar à tecnologia de ponta, com forte atuação na produção leiteira de alta performance e agricultura de precisão.
               </p>
               <Link to="/quem-somos" className="inline-flex items-center gap-2 font-black text-agri-green text-lg hover:gap-4 transition-all">
                 Conheça nossa história <ArrowRight />

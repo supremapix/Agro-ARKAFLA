@@ -33,7 +33,7 @@ export const Contato = () => {
                     </div>
                     <div className="flex items-center gap-4">
                       <Phone className="text-agri-gold shrink-0" />
-                      <p className="font-medium">(42) 3233-7456</p>
+                      <p className="font-medium">(42) 3233-7456 / (41) 3233-7456</p>
                     </div>
                     <div className="flex items-center gap-4">
                       <MessageCircle className="text-agri-gold shrink-0" />
@@ -42,6 +42,23 @@ export const Contato = () => {
                     <div className="flex items-center gap-4">
                       <Mail className="text-agri-gold shrink-0" />
                       <p className="font-medium">adm@agroarkafla.com.br</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-agri-gold font-black text-xl mb-4 uppercase tracking-widest">Unidades de Produção</h3>
+                  <div className="space-y-6">
+                    <div className="border-l-2 border-agri-gold/30 pl-4">
+                      <p className="font-black text-sm text-agri-gold uppercase mb-2">Fazenda Karina (Agrícola)</p>
+                      <p className="text-sm mb-1">(42) 3232-1265</p>
+                      <p className="text-sm mb-1">faz.karina@agroarkafla.com.br</p>
+                      <p className="text-sm font-bold text-white/70">WhatsApp: (42) 99958-6492</p>
+                    </div>
+                    <div className="border-l-2 border-agri-gold/30 pl-4">
+                      <p className="font-black text-sm text-agri-gold uppercase mb-2">Fazenda Fundamento (Pecuária)</p>
+                      <p className="text-sm mb-1">faz.fundamento@agroarkafla.com.br</p>
+                      <p className="text-sm font-bold text-white/70">WhatsApp: (42) 99958-6467</p>
                     </div>
                   </div>
                 </div>

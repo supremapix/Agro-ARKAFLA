@@ -20,13 +20,13 @@ export const QuemSomos = () => {
             </h1>
             <div className="text-lg text-gray-700 leading-relaxed mb-8 space-y-4">
               <p>
-                Em 1978 o jovem casal Armando de Paula Carvalho e Maria Helena de Albuquerque, recém-casados, passa a morar na Fazenda Invernada da Pedra. A base dos negócios era a Pecuária de Corte, mas por iniciativa de Armando, iniciaram a atividade agrícola dando os primeiros passos no novo negócio.
+                A <strong>Agropecuária Arkafla</strong>, frequentemente referida como <strong>Agro Arkafla</strong> e proprietária da Fazenda Fundamento, é uma referência em excelência no agronegócio, com sede na região de Castro/PR, atendendo Piraí do Sul e toda a região dos Campos Gerais no Paraná.
+              </p>
+              <p>
+                A empresa é reconhecida por aliar a tradição familiar à tecnologia de ponta, com forte atuação na produção leiteira e agricultura de precisão. Com mais de 30 anos de história, a empresa combina a disciplina herdada da imigração holandesa com gestão profissional, focada na sustentabilidade e eficiência da produção.
               </p>
               <p>
                 Armando e Maria Helena tiveram três filhos: <strong>Armando, Flávio e Karina</strong>. A partir da primeira sílaba do nome destes três irmãos que se originou o nome <strong>ARKAFLA</strong>.
-              </p>
-              <p>
-                Este grupo continua levando adiante o legado dos pioneiros, seguindo os princípios de honestidade e trabalho duro. Hoje, a Fazenda Fundamento em Castro, PR, conta com 2200 vacas produzindo 88.000 litros de leite por dia, suplementadas com alta tecnologia para máxima saúde e rentabilidade.
               </p>
             </div>
             
@@ -59,12 +59,58 @@ export const QuemSomos = () => {
       <InstagramVideoSection />
 
       <div className="container mx-auto px-4 mt-24">
+        {/* Pilares da Excelência */}
+        <div className="mb-24">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-5xl font-black text-agri-black mb-4">Pilares da Excelência</h2>
+            <p className="text-gray-600">O que nos torna referência no agronegócio brasileiro.</p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                title: "Produção Leiteira",
+                desc: "A Fazenda Fundamento opera com cerca de 450 vacas em ordenha, gerando aproximadamente 18.000 litros de leite por dia.",
+                icon: "🥛"
+              },
+              {
+                title: "Agricultura de Precisão",
+                desc: "Uma das maiores produtoras de pré-secado de aveia e azevém do Brasil, garantindo qualidade nutricional superior.",
+                icon: "🌾"
+              },
+              {
+                title: "Tecnologia e Sanidade",
+                desc: "Uso de protocolos avançados (Excede® e Clarifide®) para melhoramento genético e eficiência produtiva.",
+                icon: "🔬"
+              },
+              {
+                title: "Gestão Profissional",
+                desc: "Tradição familiar aliada a uma gestão focada em resultados, sustentabilidade e eficiência operacional.",
+                icon: "🤝"
+              }
+            ].map((pilar, idx) => (
+              <motion.div
+                key={pilar.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.1 }}
+                className="bg-agri-light p-8 rounded-[2rem] border border-transparent hover:border-agri-green transition-all"
+              >
+                <div className="text-4xl mb-4">{pilar.icon}</div>
+                <h3 className="text-xl font-black text-agri-black mb-3">{pilar.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{pilar.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-24">
           {[
             { label: "Vacas em Produção", value: "2.200", color: "text-agri-green" },
             { label: "Litros de Leite/Dia", value: "88.000L", color: "text-agri-gold" },
-            { label: "Anos de Tradição", value: "45+", color: "text-agri-black" },
+            { label: "Anos de Tradição", value: "30+", color: "text-agri-black" },
             { label: "Colaboradores", value: "100+", color: "text-agri-green" }
           ].map(stat => (
             <div key={stat.label} className="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 text-center">
