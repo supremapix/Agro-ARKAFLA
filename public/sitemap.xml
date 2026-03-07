@@ -2,53 +2,122 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.agroarkafla.com.br/</loc>
-    <lastmod>2024-03-07</lastmod>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.agroarkafla.com.br/quem-somos</loc>
-    <lastmod>2024-03-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.agroarkafla.com.br/atividades</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.agroarkafla.com.br/atividades</loc>
-    <lastmod>2024-03-07</lastmod>
+    <loc>https://www.agroarkafla.com.br/quem-somos</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.agroarkafla.com.br/logistica</loc>
-    <lastmod>2024-03-07</lastmod>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.agroarkafla.com.br/contato</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.agroarkafla.com.br/galeria</loc>
-    <lastmod>2024-03-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.agroarkafla.com.br/contato</loc>
-    <lastmod>2024-03-07</lastmod>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <!-- Localidades -->
-  <url><loc>https://www.agroarkafla.com.br/localidade/castro</loc><priority>0.6</priority></url>
-  <url><loc>https://www.agroarkafla.com.br/localidade/carambei</loc><priority>0.6</priority></url>
-  <url><loc>https://www.agroarkafla.com.br/localidade/ponta-grossa</loc><priority>0.6</priority></url>
-  <url><loc>https://www.agroarkafla.com.br/localidade/pirai-do-sul</loc><priority>0.6</priority></url>
-  <url><loc>https://www.agroarkafla.com.br/localidade/tibagi</loc><priority>0.6</priority></url>
-  <url><loc>https://www.agroarkafla.com.br/localidade/telemaco-borba</loc><priority>0.6</priority></url>
-  <url><loc>https://www.agroarkafla.com.br/localidade/jaguariaiva</loc><priority>0.6</priority></url>
-  <url><loc>https://www.agroarkafla.com.br/localidade/senges</loc><priority>0.6</priority></url>
-  <url><loc>https://www.agroarkafla.com.br/localidade/curitiba</loc><priority>0.6</priority></url>
-  <url><loc>https://www.agroarkafla.com.br/localidade/campo-largo</loc><priority>0.6</priority></url>
-  <url><loc>https://www.agroarkafla.com.br/localidade/palmeira</loc><priority>0.6</priority></url>
-  <url><loc>https://www.agroarkafla.com.br/localidade/irati</loc><priority>0.6</priority></url>
-  <url><loc>https://www.agroarkafla.com.br/localidade/prudentopolis</loc><priority>0.6</priority></url>
-  <url><loc>https://www.agroarkafla.com.br/localidade/arapoti</loc><priority>0.6</priority></url>
+  <url>
+    <loc>https://www.agroarkafla.com.br/localidade/castro</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.agroarkafla.com.br/localidade/carambei</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.agroarkafla.com.br/localidade/ponta-grossa</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.agroarkafla.com.br/localidade/pirai-do-sul</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.agroarkafla.com.br/localidade/tibagi</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.agroarkafla.com.br/localidade/telemaco-borba</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.agroarkafla.com.br/localidade/jaguariaiva</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.agroarkafla.com.br/localidade/senges</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.agroarkafla.com.br/localidade/curitiba</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.agroarkafla.com.br/localidade/campo-largo</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.agroarkafla.com.br/localidade/palmeira</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.agroarkafla.com.br/localidade/irati</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.agroarkafla.com.br/localidade/prudentopolis</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.agroarkafla.com.br/localidade/arapoti</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
