@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Wheat, Beef, Trees, ChevronRight } from 'lucide-react';
 import { InstagramVideoSection } from '../components/InstagramVideoSection';
+import { EnhancedSEO } from '../components/EnhancedSEO';
 
 export const Atividades = () => {
   const atividades = [
@@ -50,6 +51,11 @@ export const Atividades = () => {
 
   return (
     <div className="pt-32 pb-24">
+      <EnhancedSEO 
+        title="Atividades e Produção | Agro Arkafla"
+        description="Conheça nossas frentes de atuação: Agricultura de precisão, Pecuária leiteira de alta performance e Silvicultura sustentável na Fazenda Fundamento."
+        canonical="/atividades"
+      />
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-black text-agri-black mb-4">Nossas Atividades</h1>

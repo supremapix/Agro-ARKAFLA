@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { MapPin, MessageCircle, ChevronRight, Wheat, Beef, Trees } from 'lucide-react';
 import { InstagramVideoSection } from '../components/InstagramVideoSection';
+import { EnhancedSEO } from '../components/EnhancedSEO';
 
 export const Locality = () => {
   const { citySlug } = useParams();
@@ -9,6 +10,26 @@ export const Locality = () => {
 
   return (
     <div className="pt-32 pb-24">
+      <EnhancedSEO 
+        title={`Agro Arkafla ${cityName} | Fazenda Fundamento - Castro, PR`}
+        description={`Atendimento da Agro Arkafla em ${cityName} e região. Referência em Gado Holandês, Silagem Pré-Secada e Agricultura de Precisão.`}
+        canonical={`/localidade/${citySlug}`}
+        schemaData={{
+          "@context": "https://schema.org",
+          "@type": "AgricultureService",
+          "name": `Agro Arkafla ${cityName}`,
+          "description": `Atendimento especializado em agronegócio para a região de ${cityName}.`,
+          "areaServed": {
+            "@type": "City",
+            "name": cityName
+          },
+          "provider": {
+            "@type": "Organization",
+            "name": "Agro Arkafla",
+            "url": "https://www.agroarkafla.com.br"
+          }
+        }}
+      />
       <div className="container mx-auto px-4">
         <div className="bg-agri-dark text-white rounded-[3rem] p-12 md:p-20 mb-24 relative overflow-hidden">
           <div className="relative z-10 max-w-3xl">

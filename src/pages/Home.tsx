@@ -3,6 +3,7 @@ import { MessageCircle, Instagram, Play, Wheat, Beef, Trees, ArrowRight } from '
 import { Link } from 'react-router-dom';
 import { Typewriter } from '../components/Typewriter';
 import { InstagramVideoSection } from '../components/InstagramVideoSection';
+import { EnhancedSEO } from '../components/EnhancedSEO';
 
 export const Home = () => {
   const heroPhrases = [
@@ -35,6 +36,43 @@ export const Home = () => {
 
   return (
     <div>
+      <EnhancedSEO 
+        title="Agro Arkafla | Fazenda Fundamento - Castro, Paraná"
+        description="Referência em agronegócio no Paraná. Especialistas em Gado Holandês, Silagem Pré-Secada e Agricultura de Precisão na Fazenda Fundamento."
+        canonical="/"
+        schemaData={{
+          "@context": "https://schema.org",
+          "@type": "AgricultureService",
+          "name": "Agro Arkafla",
+          "alternateName": "Fazenda Fundamento",
+          "url": "https://www.agroarkafla.com.br/",
+          "logo": "https://castro.agroarkafla.com.br/assets/images/agro-arkafla-castro-fazenda-de-agrtonegocios-2000x1079.png",
+          "description": "Fazenda agrícola em Castro, Paraná. Especializada em Agricultura, Pecuária e Silvicultura, com foco em Gado Holandês e Silagem Pré-Secada.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua do Rosário, 130 - Centro",
+            "addressLocality": "Castro",
+            "addressRegion": "PR",
+            "postalCode": "84165-130",
+            "addressCountry": "BR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-24.7890123",
+            "longitude": "-50.0123456"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55-42-3233-7456",
+            "contactType": "customer service",
+            "areaServed": "BR",
+            "availableLanguage": "Portuguese"
+          },
+          "sameAs": [
+            "https://www.instagram.com/grupo_arkafla/"
+          ]
+        }}
+      />
       {/* Hero Section */}
       <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
         <motion.div 

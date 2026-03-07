@@ -1,10 +1,16 @@
 import { motion } from 'motion/react';
 import { Play, MapPin, Phone, MessageCircle, Mail } from 'lucide-react';
 import { InstagramVideoSection } from '../components/InstagramVideoSection';
+import { EnhancedSEO } from '../components/EnhancedSEO';
 
 export const QuemSomos = () => {
   return (
     <div className="pt-32 pb-24">
+      <EnhancedSEO 
+        title="Quem Somos | Agro Arkafla - Tradição e Tecnologia"
+        description="Conheça a história da Agropecuária Arkafla e da Fazenda Fundamento. Mais de 30 anos de tradição familiar e inovação no agronegócio em Castro, PR."
+        canonical="/quem-somos"
+      />
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-16 mb-24">
           <motion.div 

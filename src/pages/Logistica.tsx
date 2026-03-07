@@ -1,10 +1,16 @@
 import { motion } from 'motion/react';
 import { MapPin, Phone, MessageCircle, Truck, ShieldCheck, Clock, Mail, User } from 'lucide-react';
 import { InstagramVideoSection } from '../components/InstagramVideoSection';
+import { EnhancedSEO } from '../components/EnhancedSEO';
 
 export const Logistica = () => {
   return (
     <div className="pt-32 pb-24">
+      <EnhancedSEO 
+        title="Logística e Unidades | Agro Arkafla - Transarkafla"
+        description="Conheça nossas unidades: Fazenda Karina e Fazenda Fundamento. Logística eficiente com a Transarkafla para transporte de silagem e grãos em Castro e região."
+        canonical="/logistica"
+      />
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <div className="inline-block bg-agri-green/10 text-agri-green px-4 py-1 rounded-full font-bold text-sm mb-4 uppercase tracking-widest">

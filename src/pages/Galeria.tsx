@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { Camera, LayoutGrid, Filter } from 'lucide-react';
 import { useState } from 'react';
 import { InstagramVideoSection } from '../components/InstagramVideoSection';
+import { EnhancedSEO } from '../components/EnhancedSEO';
 
 const categories = [
   { id: 'all', name: 'Todas' },
@@ -94,6 +95,11 @@ export const Galeria = () => {
 
   return (
     <div className="pt-32 pb-24">
+      <EnhancedSEO 
+        title="Galeria de Fotos | Agro Arkafla - Registros do Campo"
+        description="Confira as fotos da Fazenda Fundamento, nosso rebanho de Gado Holandês, plantações e estrutura tecnológica no agronegócio."
+        canonical="/galeria"
+      />
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <div className="inline-block bg-agri-green/10 text-agri-green px-4 py-1 rounded-full font-bold text-sm mb-4">

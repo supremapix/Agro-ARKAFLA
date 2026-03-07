@@ -1,10 +1,16 @@
 import { motion } from 'motion/react';
 import { MapPin, Phone, MessageCircle, Mail, Instagram } from 'lucide-react';
 import { InstagramVideoSection } from '../components/InstagramVideoSection';
+import { EnhancedSEO } from '../components/EnhancedSEO';
 
 export const Contato = () => {
   return (
     <div className="pt-32 pb-24">
+      <EnhancedSEO 
+        title="Contato | Agro Arkafla - Fale Conosco"
+        description="Entre em contato com a Agro Arkafla. Informações sobre vendas de silagem, gado holandês e parcerias agrícolas em Castro e região."
+        canonical="/contato"
+      />
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-black text-agri-black mb-4">Contato</h1>

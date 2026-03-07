@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Instagram, MessageCircle } from 'lucide-react';
+import { cities, getCitySlug } from '../data/cities';
 
 const Logo = ({ className = "" }: { className?: string }) => (
   <div className={`flex items-center gap-3 ${className}`}>
@@ -13,12 +14,6 @@ const Logo = ({ className = "" }: { className?: string }) => (
 );
 
 export const Footer = () => {
-  const cities = [
-    'Castro', 'Carambeí', 'Ponta Grossa', 'Piraí do Sul', 'Tibagi', 
-    'Telêmaco Borba', 'Jaguariaíva', 'Sengés', 'Curitiba', 'Campo Largo',
-    'Palmeira', 'Irati', 'Prudentópolis', 'Arapoti'
-  ];
-
   return (
     <footer className="bg-agri-black text-white pt-24 pb-12 relative overflow-hidden">
       {/* Decorative Elements */}
@@ -68,7 +63,7 @@ export const Footer = () => {
                 {cities.map(city => (
                   <Link 
                     key={city} 
-                    to={`/localidade/${city.toLowerCase().replace(/\s+/g, '-')}`}
+                    to={`/localidade/${getCitySlug(city)}`}
                     className="text-white/40 hover:text-agri-green text-xs transition-colors font-medium"
                   >
                     Agro Arkafla {city}
