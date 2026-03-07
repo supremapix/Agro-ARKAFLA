@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { MessageCircle, Instagram, Play, Wheat, Beef, Trees, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Typewriter } from '../components/Typewriter';
+import { InstagramVideoSection } from '../components/InstagramVideoSection';
 
 export const Home = () => {
   const heroPhrases = [
@@ -98,6 +99,9 @@ export const Home = () => {
           </div>
         </motion.div>
       </section>
+
+      {/* Instagram Video Section */}
+      <InstagramVideoSection />
 
       {/* Intro Section */}
       <section className="py-24 bg-white">

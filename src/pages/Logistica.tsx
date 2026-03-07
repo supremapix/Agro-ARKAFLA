@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { MapPin, Phone, MessageCircle, Truck, ShieldCheck, Clock } from 'lucide-react';
+import { InstagramVideoSection } from '../components/InstagramVideoSection';
 
 export const Logistica = () => {
   return (
@@ -10,7 +11,12 @@ export const Logistica = () => {
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">Estrutura estratégica para atender o agronegócio com agilidade.</p>
           <div className="w-24 h-2 bg-agri-green mx-auto rounded-full mt-6"></div>
         </div>
+      </div>
 
+      {/* Instagram Video Section */}
+      <InstagramVideoSection />
+
+      <div className="container mx-auto px-4 mt-24">
         <div className="grid lg:grid-cols-2 gap-16 mb-24">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}

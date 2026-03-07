@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Play, MapPin, Phone, MessageCircle, Mail } from 'lucide-react';
+import { InstagramVideoSection } from '../components/InstagramVideoSection';
 
 export const QuemSomos = () => {
   return (
@@ -52,7 +53,12 @@ export const QuemSomos = () => {
             <div className="absolute -top-10 -right-10 w-64 h-64 bg-agri-gold/10 rounded-full blur-3xl -z-10"></div>
           </div>
         </div>
+      </div>
 
+      {/* Instagram Video Section */}
+      <InstagramVideoSection />
+
+      <div className="container mx-auto px-4 mt-24">
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-24">
           {[

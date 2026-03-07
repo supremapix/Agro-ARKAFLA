@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Wheat, Beef, Trees, ChevronRight } from 'lucide-react';
+import { InstagramVideoSection } from '../components/InstagramVideoSection';
 
 export const Atividades = () => {
   const atividades = [
@@ -55,7 +56,12 @@ export const Atividades = () => {
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">Excelência produtiva em todas as frentes do agronegócio.</p>
           <div className="w-24 h-2 bg-agri-green mx-auto rounded-full mt-6"></div>
         </div>
+      </div>
 
+      {/* Instagram Video Section */}
+      <InstagramVideoSection />
+
+      <div className="container mx-auto px-4 mt-24">
         <div className="space-y-32">
           {atividades.map((item, index) => (
             <section key={item.id} id={item.id} className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-16 items-center`}>

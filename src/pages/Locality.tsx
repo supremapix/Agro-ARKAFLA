@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { MapPin, MessageCircle, ChevronRight, Wheat, Beef, Trees } from 'lucide-react';
+import { InstagramVideoSection } from '../components/InstagramVideoSection';
 
 export const Locality = () => {
   const { citySlug } = useParams();
@@ -41,7 +42,12 @@ export const Locality = () => {
             />
           </div>
         </div>
+      </div>
 
+      {/* Instagram Video Section */}
+      <InstagramVideoSection />
+
+      <div className="container mx-auto px-4 mt-24">
         <div className="grid md:grid-cols-3 gap-12 mb-24">
           <div className="space-y-4">
             <div className="text-agri-green"><Wheat size={48} /></div>
