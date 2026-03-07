@@ -72,11 +72,11 @@ export const Navbar = () => {
             </Link>
           ))}
           <div className="flex items-center gap-6">
-            <a href="https://www.instagram.com/grupo_arkafla/" target="_blank" rel="noreferrer" className={`transition-all hover:scale-110 hover:text-agri-gold ${textColorClass}`}>
+            <a href="https://www.instagram.com/agroarkafla/" target="_blank" rel="noreferrer" className={`transition-all hover:scale-110 hover:text-agri-gold ${textColorClass}`}>
               <Instagram size={22} />
             </a>
             <a 
-              href="https://api.whatsapp.com/send?phone=5542999586858&text=Olá encontrei seu site no Google gostaria de saber sobre:" 
+              href="https://api.whatsapp.com/send?phone=5542999586858&text=Olá! Vi seu site e gostaria de mais informações sobre a Agro Arkafla. (Vindo do Menu)" 
               target="_blank" 
               rel="noreferrer"
               className="bg-agri-green hover:bg-agri-dark text-white px-8 py-3 rounded-full font-black text-sm uppercase tracking-widest flex items-center gap-2 transition-all shadow-[0_10px_20px_rgba(46,125,50,0.3)] hover:shadow-[0_15px_30px_rgba(46,125,50,0.4)] hover:-translate-y-1"
@@ -141,7 +141,7 @@ export const Navbar = () => {
                 className="flex flex-col items-center gap-6 mt-12 w-full max-w-xs"
               >
                 <a 
-                  href="https://api.whatsapp.com/send?phone=5542999586858&text=Olá encontrei seu site no Google gostaria de saber sobre:" 
+                  href="https://api.whatsapp.com/send?phone=5542999586858&text=Olá! Vi seu site e gostaria de mais informações sobre a Agro Arkafla. (Vindo do Menu Mobile)" 
                   target="_blank" 
                   rel="noreferrer" 
                   className="w-full bg-agri-green text-white py-5 rounded-full font-black text-lg flex items-center justify-center gap-3 shadow-2xl"
@@ -149,12 +149,12 @@ export const Navbar = () => {
                   <MessageCircle size={24} /> WhatsApp
                 </a>
                 <a 
-                  href="https://www.instagram.com/grupo_arkafla/" 
+                  href="https://www.instagram.com/agroarkafla/" 
                   target="_blank" 
                   rel="noreferrer" 
                   className="flex items-center gap-3 text-white font-bold text-xl hover:text-agri-gold transition-colors"
                 >
-                  <Instagram size={24} /> @grupo_arkafla
+                  <Instagram size={24} /> @agroarkafla
                 </a>
               </motion.div>
             </div>

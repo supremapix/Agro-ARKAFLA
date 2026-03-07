@@ -29,10 +29,10 @@ export const Footer = () => {
               Referência em excelência no agronegócio, aliando tradição familiar à tecnologia de ponta para resultados de alta performance no campo.
             </p>
             <div className="flex gap-4">
-              <a href="https://www.instagram.com/grupo_arkafla/" target="_blank" rel="noreferrer" className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-agri-gold hover:border-agri-gold transition-all duration-300 group">
+              <a href="https://www.instagram.com/agroarkafla/" target="_blank" rel="noreferrer" className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-agri-gold hover:border-agri-gold transition-all duration-300 group">
                 <Instagram size={22} className="group-hover:scale-110 transition-transform" />
               </a>
-              <a href="https://api.whatsapp.com/send?phone=5542999586858&text=Olá encontrei seu site no Google gostaria de saber sobre:" target="_blank" rel="noreferrer" className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-agri-green hover:border-agri-green transition-all duration-300 group">
+              <a href="https://api.whatsapp.com/send?phone=5542999586858&text=Olá! Vi seu site e gostaria de mais informações sobre a Agro Arkafla. (Vindo do Rodapé)" target="_blank" rel="noreferrer" className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-agri-green hover:border-agri-green transition-all duration-300 group">
                 <MessageCircle size={22} className="group-hover:scale-110 transition-transform" />
               </a>
             </div>

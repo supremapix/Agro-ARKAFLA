@@ -69,7 +69,7 @@ export const Home = () => {
             "availableLanguage": "Portuguese"
           },
           "sameAs": [
-            "https://www.instagram.com/grupo_arkafla/"
+            "https://www.instagram.com/agroarkafla/"
           ]
         }}
       />
@@ -123,7 +123,7 @@ export const Home = () => {
               className="flex flex-col sm:flex-row items-center justify-center gap-6"
             >
               <a 
-                href="https://api.whatsapp.com/send?phone=5542999586858&text=Olá encontrei seu site no Google gostaria de saber sobre:" 
+                href="https://api.whatsapp.com/send?phone=5542999586858&text=Olá! Vi seu site e gostaria de mais informações sobre a Agro Arkafla. (Vindo da Página Inicial)" 
                 target="_blank"
                 rel="noreferrer"
                 className="group w-full sm:w-auto bg-agri-green text-white px-12 py-5 rounded-full font-black text-lg flex items-center justify-center gap-3 transition-all shadow-[0_20px_40px_rgba(46,125,50,0.4)] hover:shadow-[0_25px_50px_rgba(46,125,50,0.5)] hover:-translate-y-1 active:scale-95"
@@ -132,7 +132,7 @@ export const Home = () => {
                 Falar no WhatsApp
               </a>
               <a 
-                href="https://www.instagram.com/grupo_arkafla/" 
+                href="https://www.instagram.com/agroarkafla/" 
                 target="_blank"
                 rel="noreferrer"
                 className="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-xl text-white border border-white/20 px-12 py-5 rounded-full font-black text-lg flex items-center justify-center gap-3 transition-all shadow-2xl hover:-translate-y-1 active:scale-95"
