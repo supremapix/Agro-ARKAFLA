@@ -104,12 +104,7 @@ export const Galeria = () => {
             Conheça nossa estrutura, rebanho e plantações através de registros reais do dia a dia na Fazenda Fundamento.
           </p>
         </div>
-      </div>
 
-      {/* Instagram Video Section */}
-      <InstagramVideoSection />
-
-      <div className="container mx-auto px-4 mt-24">
         {/* Filters */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map(cat => (
@@ -162,6 +157,9 @@ export const Galeria = () => {
           </div>
         )}
       </div>
+
+      {/* Instagram Video Section - Before Footer on other pages */}
+      <InstagramVideoSection />
     </div>
   );
 };

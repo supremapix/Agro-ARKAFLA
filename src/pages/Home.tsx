@@ -37,41 +37,58 @@ export const Home = () => {
     <div>
       {/* Hero Section */}
       <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
+        <motion.div 
+          initial={{ scale: 1.1 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 10, ease: "easeOut" }}
+          className="absolute inset-0 z-0"
+        >
           <img 
             src="https://castro.agroarkafla.com.br/assets/images/foto-fardos-palha-de-trigo-666x499.jpg" 
             alt="Fazenda em Castro PR" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-black/60"></div>
-        </div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-agri-black"></div>
+        </motion.div>
 
         <div className="container mx-auto px-4 relative z-10 text-center text-white">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 1, ease: "easeOut" }}
           >
-            <h1 className="text-4xl md:text-7xl font-black mb-4 drop-shadow-xl">
-              Fazenda Fundamento | <span className="text-agri-gold">Grupo ARKAFLA</span>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.2, duration: 0.8 }}
+              className="inline-flex items-center gap-2 bg-agri-green/20 backdrop-blur-md border border-white/10 px-6 py-2 rounded-full font-black text-xs uppercase tracking-[0.3em] mb-8 text-agri-gold"
+            >
+              <span className="w-2 h-2 bg-agri-gold rounded-full animate-pulse"></span>
+              Fazenda Fundamento
+            </motion.div>
+
+            <h1 className="text-5xl md:text-8xl font-black mb-6 drop-shadow-2xl leading-[0.9] tracking-tighter">
+              Grupo <span className="text-agri-gold italic">ARKAFLA</span>
             </h1>
-            <div className="h-20 md:h-24 flex items-center justify-center">
-              <p className="text-xl md:text-3xl font-bold text-white drop-shadow-md">
+            
+            <div className="h-24 md:h-32 flex items-center justify-center mb-8">
+              <p className="text-2xl md:text-4xl font-bold text-white/90 drop-shadow-md max-w-4xl mx-auto">
                 <Typewriter phrases={heroPhrases} />
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl max-w-2xl mx-auto mb-10 mt-6">
-              <p className="text-lg md:text-xl font-bold">
-                Vendas de <span className="text-agri-gold">Silagem Pré Secada</span> e <span className="text-agri-gold">Gado Holandês</span>
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1, duration: 1 }}
+              className="flex flex-col sm:flex-row items-center justify-center gap-6"
+            >
               <a 
                 href="https://api.whatsapp.com/send?phone=5542999586858&text=Olá encontrei seu site no Google gostaria de saber sobre:" 
                 target="_blank"
                 rel="noreferrer"
-                className="w-full sm:w-auto bg-agri-green hover:bg-agri-dark text-white px-10 py-4 rounded-full font-black text-lg flex items-center justify-center gap-3 transition-all shadow-xl hover:scale-105"
+                className="group w-full sm:w-auto bg-agri-green text-white px-12 py-5 rounded-full font-black text-lg flex items-center justify-center gap-3 transition-all shadow-[0_20px_40px_rgba(46,125,50,0.4)] hover:shadow-[0_25px_50px_rgba(46,125,50,0.5)] hover:-translate-y-1 active:scale-95"
               >
                 <MessageCircle size={24} />
                 Falar no WhatsApp
@@ -80,27 +97,31 @@ export const Home = () => {
                 href="https://www.instagram.com/grupo_arkafla/" 
                 target="_blank"
                 rel="noreferrer"
-                className="w-full sm:w-auto bg-white/20 hover:bg-white/30 backdrop-blur-md text-white border border-white/40 px-10 py-4 rounded-full font-black text-lg flex items-center justify-center gap-3 transition-all shadow-xl hover:scale-105"
+                className="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-xl text-white border border-white/20 px-12 py-5 rounded-full font-black text-lg flex items-center justify-center gap-3 transition-all shadow-2xl hover:-translate-y-1 active:scale-95"
               >
                 <Instagram size={24} />
                 Siga no Instagram
               </a>
-            </div>
+            </motion.div>
           </motion.div>
         </div>
 
         <motion.div 
-          animate={{ y: [0, 10, 0] }}
-          transition={{ repeat: Infinity, duration: 2 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 text-white opacity-70"
+          animate={{ y: [0, 15, 0] }}
+          transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
+          className="absolute bottom-12 left-1/2 -translate-x-1/2 z-10 text-white/50"
         >
-          <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center p-1">
-            <div className="w-1 h-2 bg-white rounded-full"></div>
+          <div className="w-7 h-12 border-2 border-white/30 rounded-full flex justify-center p-2">
+            <motion.div 
+              animate={{ y: [0, 16, 0] }}
+              transition={{ repeat: Infinity, duration: 1.5 }}
+              className="w-1.5 h-1.5 bg-agri-gold rounded-full"
+            ></motion.div>
           </div>
         </motion.div>
       </section>
 
-      {/* Instagram Video Section */}
+      {/* Instagram Video Section - Right after Hero on Home */}
       <InstagramVideoSection />
 
       {/* Intro Section */}

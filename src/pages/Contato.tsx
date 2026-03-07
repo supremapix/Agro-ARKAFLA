@@ -11,12 +11,7 @@ export const Contato = () => {
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">Estamos à disposição para atender suas necessidades e parcerias.</p>
           <div className="w-24 h-2 bg-agri-green mx-auto rounded-full mt-6"></div>
         </div>
-      </div>
 
-      {/* Instagram Video Section */}
-      <InstagramVideoSection />
-
-      <div className="container mx-auto px-4 mt-24">
         <div className="bg-white rounded-[3rem] shadow-2xl overflow-hidden">
           <div className="flex flex-col lg:flex-row">
             {/* Info Column */}
@@ -139,6 +134,9 @@ export const Contato = () => {
           </div>
         </div>
       </div>
+
+      {/* Instagram Video Section - Before Footer on other pages */}
+      <InstagramVideoSection />
     </div>
   );
 };

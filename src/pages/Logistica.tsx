@@ -16,12 +16,7 @@ export const Logistica = () => {
           </p>
           <div className="w-24 h-2 bg-agri-green mx-auto rounded-full mt-6"></div>
         </div>
-      </div>
 
-      {/* Instagram Video Section */}
-      <InstagramVideoSection />
-
-      <div className="container mx-auto px-4 mt-24">
         <div className="grid lg:grid-cols-2 gap-16 mb-24">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
@@ -165,6 +160,9 @@ export const Logistica = () => {
           ))}
         </div>
       </div>
+
+      {/* Instagram Video Section - Before Footer on other pages */}
+      <InstagramVideoSection />
     </div>
   );
 };

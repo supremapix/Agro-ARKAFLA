@@ -20,74 +20,92 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="bg-agri-black text-white py-16">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-12 border-b border-white/10 pb-12 mb-12">
-          <Logo className="invert brightness-0" />
-          
-          <div className="flex flex-wrap justify-center gap-8 font-bold">
-            <Link to="/" className="hover:text-agri-gold transition-colors">Home</Link>
-            <Link to="/quem-somos" className="hover:text-agri-gold transition-colors">Quem Somos</Link>
-            <Link to="/atividades" className="hover:text-agri-gold transition-colors">Atividades</Link>
-            <Link to="/logistica" className="hover:text-agri-gold transition-colors">Logística</Link>
-            <Link to="/contato" className="hover:text-agri-gold transition-colors">Contato</Link>
-          </div>
+    <footer className="bg-agri-black text-white pt-24 pb-12 relative overflow-hidden">
+      {/* Decorative Elements */}
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-agri-green/50 to-transparent"></div>
+      <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-agri-green/5 rounded-full blur-[100px]"></div>
 
-          <div className="flex gap-4">
-            <a href="https://www.instagram.com/grupo_arkafla/" target="_blank" rel="noreferrer" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-agri-gold transition-colors">
-              <Instagram size={20} />
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=5542999586858&text=Olá encontrei seu site no Google gostaria de saber sobre:" target="_blank" rel="noreferrer" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-agri-green transition-colors">
-              <MessageCircle size={20} />
-            </a>
-          </div>
-        </div>
-
-        {/* Locality Links for SEO */}
-        <div className="mb-12">
-          <h4 className="text-agri-gold font-black text-sm uppercase tracking-widest mb-4 text-center md:text-left">Atendimento Regional</h4>
-          <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center md:justify-start">
-            {cities.map(city => (
-              <Link 
-                key={city} 
-                to={`/localidade/${city.toLowerCase().replace(/\s+/g, '-')}`}
-                className="text-white/40 hover:text-white text-xs transition-colors"
-              >
-                Agro Arkafla em {city}
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8 text-white/50 text-sm font-medium">
-          <div className="flex flex-col gap-2 items-center md:items-start">
-            <p>© 2024 Agro Arkafla - Todos os direitos reservados</p>
-            <div className="flex gap-6">
-              <Link to="/privacidade" className="hover:text-white transition-colors">Política de Privacidade</Link>
-              <Link to="/termos" className="hover:text-white transition-colors">Termos de Uso</Link>
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-20">
+          {/* Brand Column */}
+          <div className="lg:col-span-4 flex flex-col items-center lg:items-start">
+            <Logo className="invert brightness-0 mb-8" />
+            <p className="text-white/60 text-center lg:text-left leading-relaxed mb-8 max-w-sm font-medium">
+              Referência em excelência no agronegócio, aliando tradição familiar à tecnologia de ponta para resultados de alta performance no campo.
+            </p>
+            <div className="flex gap-4">
+              <a href="https://www.instagram.com/grupo_arkafla/" target="_blank" rel="noreferrer" className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-agri-gold hover:border-agri-gold transition-all duration-300 group">
+                <Instagram size={22} className="group-hover:scale-110 transition-transform" />
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=5542999586858&text=Olá encontrei seu site no Google gostaria de saber sobre:" target="_blank" rel="noreferrer" className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-agri-green hover:border-agri-green transition-all duration-300 group">
+                <MessageCircle size={22} className="group-hover:scale-110 transition-transform" />
+              </a>
             </div>
           </div>
 
-          <div className="flex flex-col items-center md:items-end gap-4">
-            <div className="flex items-center gap-3 bg-white/5 px-4 py-2 rounded-full border border-white/10">
-              <span className="text-white/70">Desenvolvido</span>
-              <span className="text-red-500 animate-heart-beat">❤️</span>
-              <span className="text-white/70 text-xs">por</span>
+          {/* Links Columns */}
+          <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-12">
+            <div>
+              <h4 className="text-agri-gold font-black text-sm uppercase tracking-widest mb-8">Navegação</h4>
+              <ul className="space-y-4">
+                {['Home', 'Quem Somos', 'Atividades', 'Logística', 'Galeria', 'Contato'].map((item) => (
+                  <li key={item}>
+                    <Link 
+                      to={item === 'Home' ? '/' : `/${item.toLowerCase().replace('í', 'i').replace(' ', '-')}`} 
+                      className="text-white/60 hover:text-white transition-colors font-bold text-sm uppercase tracking-wider flex items-center gap-2 group"
+                    >
+                      <span className="w-1.5 h-1.5 bg-agri-green rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                      {item}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="col-span-2 md:col-span-2">
+              <h4 className="text-agri-gold font-black text-sm uppercase tracking-widest mb-8">Atendimento Regional</h4>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-3">
+                {cities.map(city => (
+                  <Link 
+                    key={city} 
+                    to={`/localidade/${city.toLowerCase().replace(/\s+/g, '-')}`}
+                    className="text-white/40 hover:text-agri-green text-xs transition-colors font-medium"
+                  >
+                    Agro Arkafla {city}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-8 text-white/40 text-xs font-bold uppercase tracking-widest">
+          <div className="flex flex-col gap-4 items-center md:items-start">
+            <p>© 2024 Agro Arkafla - Todos os direitos reservados</p>
+            <div className="flex gap-8">
+              <Link to="/privacidade" className="hover:text-white transition-colors">Privacidade</Link>
+              <Link to="/termos" className="hover:text-white transition-colors">Termos</Link>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center md:items-end gap-6">
+            <div className="flex items-center gap-4 bg-white/5 px-6 py-3 rounded-full border border-white/10 group hover:border-agri-gold/50 transition-colors">
+              <span className="text-white/50">Desenvolvido por</span>
               <a 
                 href="https://supremasite.com.br" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-white font-bold hover:text-agri-gold transition-colors"
+                className="flex items-center gap-2"
               >
-                Suprema Sites Express
+                <span className="text-white font-black group-hover:text-agri-gold transition-colors">Suprema Sites Express</span>
+                <img 
+                  src="https://img.supremamidia.com/suprema-img.png" 
+                  alt="Suprema Mídia" 
+                  className="h-5 w-auto grayscale brightness-200 group-hover:grayscale-0 group-hover:brightness-100 transition-all"
+                  referrerPolicy="no-referrer"
+                />
               </a>
             </div>
-            <img 
-              src="https://img.supremamidia.com/suprema-img.png" 
-              alt="Suprema Mídia" 
-              className="h-8 w-auto opacity-70 hover:opacity-100 transition-opacity"
-              referrerPolicy="no-referrer"
-            />
           </div>
         </div>
       </div>

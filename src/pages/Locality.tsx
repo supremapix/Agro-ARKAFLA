@@ -42,12 +42,7 @@ export const Locality = () => {
             />
           </div>
         </div>
-      </div>
 
-      {/* Instagram Video Section */}
-      <InstagramVideoSection />
-
-      <div className="container mx-auto px-4 mt-24">
         <div className="grid md:grid-cols-3 gap-12 mb-24">
           <div className="space-y-4">
             <div className="text-agri-green"><Wheat size={48} /></div>
@@ -82,6 +77,9 @@ export const Locality = () => {
           </div>
         </div>
       </div>
+
+      {/* Instagram Video Section - Before Footer on other pages */}
+      <InstagramVideoSection />
     </div>
   );
 };

@@ -55,9 +55,6 @@ export const QuemSomos = () => {
         </div>
       </div>
 
-      {/* Instagram Video Section */}
-      <InstagramVideoSection />
-
       <div className="container mx-auto px-4 mt-24">
         {/* Pilares da Excelência */}
         <div className="mb-24">
@@ -120,6 +117,9 @@ export const QuemSomos = () => {
           ))}
         </div>
       </div>
+
+      {/* Instagram Video Section - Before Footer on other pages */}
+      <InstagramVideoSection />
     </div>
   );
 };
