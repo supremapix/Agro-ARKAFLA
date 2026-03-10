@@ -11,6 +11,7 @@ import { Logistica } from './pages/Logistica';
 import { Contato } from './pages/Contato';
 import { Locality } from './pages/Locality';
 import { Galeria } from './pages/Galeria';
+import { NotFound } from './pages/NotFound';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -38,7 +39,7 @@ export default function App() {
               <Route path="/galeria" element={<Galeria />} />
               <Route path="/localidade/:citySlug" element={<Locality />} />
               {/* Fallback */}
-              <Route path="*" element={<Home />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
           <Footer />

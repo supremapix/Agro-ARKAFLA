@@ -3,6 +3,7 @@ import { MessageCircle, Instagram, Play, Wheat, Beef, Trees, ArrowRight } from '
 import { Link } from 'react-router-dom';
 import { Typewriter } from '../components/Typewriter';
 import { InstagramVideoSection } from '../components/InstagramVideoSection';
+import { FeaturedVideoSection } from '../components/FeaturedVideoSection';
 import { EnhancedSEO } from '../components/EnhancedSEO';
 
 export const Home = () => {
@@ -161,6 +162,9 @@ export const Home = () => {
 
       {/* Instagram Video Section - Right after Hero on Home */}
       <InstagramVideoSection />
+
+      {/* Featured Video Section - O Código da Genética */}
+      <FeaturedVideoSection />
 
       {/* Intro Section */}
       <section className="py-24 bg-white">
