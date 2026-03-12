@@ -9,7 +9,7 @@ export const Atividades = () => {
       id: "agricultura",
       title: "Agricultura",
       icon: <Wheat className="w-12 h-12" />,
-      image: "https://castro.agroarkafla.com.br/assets/images/foto-colheita-trigo-254x191.jpg",
+      image: "https://www.agroarkafla.com.br/assets/images/foto-colheita-trigo-254x191.jpg",
       description: "Safra de verão (soja, milho, feijão) e inverno (trigo, aveia branca, azevém). Parte da produção é transformada em silagem para o rebanho.",
       details: [
         "Agricultura de precisão para máxima qualidade nutricional",
@@ -23,7 +23,7 @@ export const Atividades = () => {
       id: "pecuaria",
       title: "Pecuária de Leite",
       icon: <Beef className="w-12 h-12" />,
-      image: "https://castro.agroarkafla.com.br/assets/images/agro-gado-holandes-castro-pr-castro-fazenda-de-gado-794x523.png",
+      image: "https://www.agroarkafla.com.br/assets/images/agro-gado-holandes-castro-pr-castro-fazenda-de-gado-794x523.png",
       description: "Produção de reprodutores, matrizes, embriões e prenhezes HPB PO. Garantia de 10.000kg de leite aos 305 dias de lactação no 1º parto.",
       details: [
         "Genética de ponta com uso de Clarifide® para melhoramento",
@@ -37,7 +37,7 @@ export const Atividades = () => {
       id: "silvicultura",
       title: "Silvicultura",
       icon: <Trees className="w-12 h-12" />,
-      image: "https://castro.agroarkafla.com.br/assets/images/agro-arkafla-silvicultura-1-183x217.jpg",
+      image: "https://www.agroarkafla.com.br/assets/images/agro-arkafla-silvicultura-1-183x217.jpg",
       description: "Cultivo de florestas de eucalipto para madeira e pinus para resina em áreas recuperadas, auxiliando na biodiversidade.",
       details: [
         "Reflorestamento em áreas estratégicas",
@@ -137,7 +137,7 @@ export const Atividades = () => {
             </div>
             <div className="lg:w-1/2 relative">
               <img 
-                src="https://castro.agroarkafla.com.br/assets/images/agro-arkafla-castro-pr-castro-silagem-pre-secada-1-794x523.png" 
+                src="https://www.agroarkafla.com.br/assets/images/agro-arkafla-castro-pr-castro-silagem-pre-secada-1-794x523.png" 
                 alt="Silagem Agro Arkafla" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -177,7 +177,7 @@ export const Atividades = () => {
             </div>
             <div className="lg:w-1/2">
               <img 
-                src="https://castro.agroarkafla.com.br/assets/images/silagem-pr-secada-embalada-254x165.jpg" 
+                src="https://www.agroarkafla.com.br/assets/images/silagem-pr-secada-embalada-254x165.jpg" 
                 alt="Silagem Embalada" 
                 className="rounded-3xl shadow-lg w-full h-auto"
                 referrerPolicy="no-referrer"

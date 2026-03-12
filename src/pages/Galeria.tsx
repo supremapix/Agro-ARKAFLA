@@ -16,71 +16,71 @@ const categories = [
 const images = [
   // Identidade
   { 
-    url: "https://castro.agroarkafla.com.br/assets/images/agro-arkafla-castro-fazenda-de-agrtonegocios-2000x1079.png", 
+    url: "https://www.agroarkafla.com.br/assets/images/agro-arkafla-castro-fazenda-de-agrtonegocios-2000x1079.png", 
     category: 'identidade', 
     title: 'Logo Principal Agro Arkafla' 
   },
   // Pecuária
   { 
-    url: "https://castro.agroarkafla.com.br/assets/images/agro-gado-holandes-castro-pr-castro-fazenda-de-gado-794x523.png", 
+    url: "https://www.agroarkafla.com.br/assets/images/agro-gado-holandes-castro-pr-castro-fazenda-de-gado-794x523.png", 
     category: 'pecuaria', 
     title: 'Gado Holandês no Pasto' 
   },
   // Agricultura
   { 
-    url: "https://castro.agroarkafla.com.br/assets/images/foto-colheita-trigo-254x191.jpg", 
+    url: "https://www.agroarkafla.com.br/assets/images/foto-colheita-trigo-254x191.jpg", 
     category: 'agricultura', 
     title: 'Colheita de Trigo' 
   },
   { 
-    url: "https://castro.agroarkafla.com.br/assets/images/fotos-agricultura-254x191.jpg", 
+    url: "https://www.agroarkafla.com.br/assets/images/fotos-agricultura-254x191.jpg", 
     category: 'agricultura', 
     title: 'Plantação de Soja/Milho' 
   },
   { 
-    url: "https://castro.agroarkafla.com.br/assets/images/fotos-agricultura-2-254x191.jpg", 
+    url: "https://www.agroarkafla.com.br/assets/images/fotos-agricultura-2-254x191.jpg", 
     category: 'agricultura', 
     title: 'Tratores na Lavoura' 
   },
   { 
-    url: "https://castro.agroarkafla.com.br/assets/images/fotos-agricultura-4-254x191.jpg", 
+    url: "https://www.agroarkafla.com.br/assets/images/fotos-agricultura-4-254x191.jpg", 
     category: 'agricultura', 
     title: 'Broto Nascendo' 
   },
   { 
-    url: "https://castro.agroarkafla.com.br/assets/images/fotos-agricultura-6-254x191.jpg", 
+    url: "https://www.agroarkafla.com.br/assets/images/fotos-agricultura-6-254x191.jpg", 
     category: 'agricultura', 
     title: 'Vista da Fazenda' 
   },
   { 
-    url: "https://castro.agroarkafla.com.br/assets/images/foto-palha-de-trigo-254x191.jpg", 
+    url: "https://www.agroarkafla.com.br/assets/images/foto-palha-de-trigo-254x191.jpg", 
     category: 'agricultura', 
     title: 'Palha de Trigo' 
   },
   { 
-    url: "https://castro.agroarkafla.com.br/assets/images/foto-pulverizao-area-254x232.jpg", 
+    url: "https://www.agroarkafla.com.br/assets/images/foto-pulverizao-area-254x232.jpg", 
     category: 'agricultura', 
     title: 'Pulverização Aérea' 
   },
   // Silvicultura
   { 
-    url: "https://castro.agroarkafla.com.br/assets/images/agro-arkafla-silvicultura-1-183x217.jpg", 
+    url: "https://www.agroarkafla.com.br/assets/images/agro-arkafla-silvicultura-1-183x217.jpg", 
     category: 'silvicultura', 
     title: 'Área de Silvicultura' 
   },
   // Produtos
   { 
-    url: "https://castro.agroarkafla.com.br/assets/images/silagem-pre-secada-castro-agro-arkafla-254x337.jpg", 
+    url: "https://www.agroarkafla.com.br/assets/images/silagem-pre-secada-castro-agro-arkafla-254x337.jpg", 
     category: 'produtos', 
     title: 'Silagem no Campo' 
   },
   { 
-    url: "https://castro.agroarkafla.com.br/assets/images/silagem-pr-secada-embalada-254x165.jpg", 
+    url: "https://www.agroarkafla.com.br/assets/images/silagem-pr-secada-embalada-254x165.jpg", 
     category: 'produtos', 
     title: 'Silagem Embalada' 
   },
   { 
-    url: "https://castro.agroarkafla.com.br/assets/images/agro-arkafla-castro-pr-castro-silagem-pre-secada-1-794x523.png", 
+    url: "https://www.agroarkafla.com.br/assets/images/agro-arkafla-castro-pr-castro-silagem-pre-secada-1-794x523.png", 
     category: 'produtos', 
     title: 'Máquina de Silagem' 
   },

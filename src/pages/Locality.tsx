@@ -56,7 +56,7 @@ export const Locality = () => {
           {/* Background decoration */}
           <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
             <img 
-              src="https://castro.agroarkafla.com.br/assets/images/agro-arkafla-castro-fazenda-de-agrtonegocios-2000x1079.png" 
+              src="https://www.agroarkafla.com.br/assets/images/agro-arkafla-castro-fazenda-de-agrtonegocios-2000x1079.png" 
               alt="Decoration" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"

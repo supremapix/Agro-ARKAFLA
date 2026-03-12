@@ -15,7 +15,7 @@ export const EnhancedSEO = ({
   description,
   keywords = "Agro Arkafla, Fazenda Fundamento, Castro PR, Gado Holandês, Silagem Pré-Secada, Agricultura Paraná, Pecuária Leiteira",
   canonical,
-  image = "https://castro.agroarkafla.com.br/assets/images/agro-arkafla-castro-fazenda-de-agrtonegocios-2000x1079.png",
+  image = "https://www.agroarkafla.com.br/assets/images/agro-arkafla-castro-fazenda-de-agrtonegocios-2000x1079.png",
   type = "website",
   schemaData
 }: EnhancedSEOProps) => {
@@ -52,7 +52,7 @@ export const EnhancedSEO = ({
       {/* Resource Hints */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      <link rel="preconnect" href="https://castro.agroarkafla.com.br" />
+      <link rel="preconnect" href="https://www.agroarkafla.com.br" />
       <link rel="dns-prefetch" href="https://www.instagram.com/agroarkafla/" />
 
       {/* Font Optimization */}
