@@ -19,7 +19,7 @@ export const EnhancedSEO = ({
   type = "website",
   schemaData
 }: EnhancedSEOProps) => {
-  const siteUrl = "https://www.agroarkafla.com.br";
+  const siteUrl = "https://agroarkafla.com";
   const fullCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
 
   return (

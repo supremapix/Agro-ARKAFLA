@@ -46,7 +46,7 @@ export const Home = () => {
           "@type": "AgricultureService",
           "name": "Agro Arkafla",
           "alternateName": "Fazenda Fundamento",
-          "url": "https://www.agroarkafla.com.br/",
+          "url": "https://agroarkafla.com/",
           "logo": "https://www.agroarkafla.com.br/assets/images/agro-arkafla-castro-fazenda-de-agrtonegocios-2000x1079.png",
           "description": "Fazenda agrícola em Castro, Paraná. Especializada em Agricultura, Pecuária e Silvicultura, com foco em Gado Holandês e Silagem Pré-Secada.",
           "address": {

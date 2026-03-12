@@ -26,7 +26,7 @@ export const Locality = () => {
           "provider": {
             "@type": "Organization",
             "name": "Agro Arkafla",
-            "url": "https://www.agroarkafla.com.br"
+            "url": "https://agroarkafla.com"
           }
         }}
       />
