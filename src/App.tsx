@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { HelmetProvider } from 'react-helmet-async';
+import { AnimatePresence } from 'motion/react';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { WhatsAppFloat } from './components/WhatsAppFloat';
@@ -12,6 +13,7 @@ import { Contato } from './pages/Contato';
 import { Locality } from './pages/Locality';
 import { Galeria } from './pages/Galeria';
 import { NotFound } from './pages/NotFound';
+import { PageTransition } from './components/PageTransition';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -22,6 +24,27 @@ const ScrollToTop = () => {
   return null;
 };
 
+const AnimatedRoutes = () => {
+  const location = useLocation();
+  
+  return (
+    <AnimatePresence mode="wait">
+      <div key={location.pathname}>
+        <Routes location={location}>
+          <Route path="/" element={<PageTransition><Home /></PageTransition>} />
+          <Route path="/quem-somos" element={<PageTransition><QuemSomos /></PageTransition>} />
+          <Route path="/atividades" element={<PageTransition><Atividades /></PageTransition>} />
+          <Route path="/logistica" element={<PageTransition><Logistica /></PageTransition>} />
+          <Route path="/contato" element={<PageTransition><Contato /></PageTransition>} />
+          <Route path="/galeria" element={<PageTransition><Galeria /></PageTransition>} />
+          <Route path="/localidade/:citySlug" element={<PageTransition><Locality /></PageTransition>} />
+          <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
+        </Routes>
+      </div>
+    </AnimatePresence>
+  );
+};
+
 export default function App() {
   return (
     <HelmetProvider>
@@ -30,17 +53,7 @@ export default function App() {
           <ScrollToTop />
           <Navbar />
           <main className="min-h-screen">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/quem-somos" element={<QuemSomos />} />
-              <Route path="/atividades" element={<Atividades />} />
-              <Route path="/logistica" element={<Logistica />} />
-              <Route path="/contato" element={<Contato />} />
-              <Route path="/galeria" element={<Galeria />} />
-              <Route path="/localidade/:citySlug" element={<Locality />} />
-              {/* Fallback */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+            <AnimatedRoutes />
           </main>
           <Footer />
           <WhatsAppFloat />
