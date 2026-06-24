@@ -47,7 +47,7 @@ export const Home = () => {
           "name": "Agro Arkafla",
           "alternateName": "Fazenda Fundamento",
           "url": "https://agroarkafla.com/",
-          "logo": "https://www.agroarkafla.com.br/assets/images/agro-arkafla-castro-fazenda-de-agrtonegocios-2000x1079.png",
+          "logo": "https://fazendafundamento.agroarkafla.com/assets/images/agro-arkafla-castro-fazenda-de-agrtonegocios-144x78.png",
           "description": "Fazenda agrícola em Castro, Paraná. Especializada em Agricultura, Pecuária e Silvicultura, com foco em Gado Holandês e Silagem Pré-Secada.",
           "address": {
             "@type": "PostalAddress",
@@ -83,7 +83,7 @@ export const Home = () => {
           className="absolute inset-0 z-0"
         >
           <img 
-            src="https://www.agroarkafla.com.br/assets/images/foto-fardos-palha-de-trigo-666x499.jpg" 
+            src="https://fazendafundamento.agroarkafla.com/assets/images/foto-fardos-palha-de-trigo-666x499.jpg" 
             alt="Fazenda em Castro PR" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -206,7 +206,7 @@ export const Home = () => {
             >
               <div className="absolute -inset-4 bg-agri-green/10 rounded-[3rem] -z-10 blur-2xl"></div>
               <img 
-                src="https://www.agroarkafla.com.br/assets/images/agro-gado-holandes-castro-pr-castro-fazenda-de-gado-794x523.png" 
+                src="https://fazendafundamento.agroarkafla.com/assets/images/agro-gado-holandes-castro-pr-castro-fazenda-de-gado-794x523.png" 
                 alt="Gado Holandês" 
                 className="rounded-[2.5rem] shadow-2xl w-full object-cover aspect-[4/3]"
                 referrerPolicy="no-referrer"
@@ -237,9 +237,9 @@ export const Home = () => {
           
           <div className="grid md:grid-cols-12 gap-6 max-w-6xl mx-auto">
             {[
-              { title: "Agricultura", icon: <Wheat />, link: "/atividades#agricultura", img: "https://www.agroarkafla.com.br/assets/images/fotos-agricultura-254x191.jpg", cols: "md:col-span-7" },
-              { title: "Pecuária", icon: <Beef />, link: "/atividades#pecuaria", img: "https://www.agroarkafla.com.br/assets/images/agro-gado-holandes-castro-pr-castro-fazenda-de-gado-794x523.png", cols: "md:col-span-5" },
-              { title: "Silvicultura", icon: <Trees />, link: "/atividades#silvicultura", img: "https://www.agroarkafla.com.br/assets/images/agro-arkafla-silvicultura-1-183x217.jpg", cols: "md:col-span-12" }
+              { title: "Agricultura", icon: <Wheat />, link: "/atividades#agricultura", img: "https://fazendafundamento.agroarkafla.com/assets/images/fotos-agricultura-254x191.jpg", cols: "md:col-span-7" },
+              { title: "Pecuária", icon: <Beef />, link: "/atividades#pecuaria", img: "https://fazendafundamento.agroarkafla.com/assets/images/agro-gado-holandes-castro-pr-castro-fazenda-de-gado-794x523.png", cols: "md:col-span-5" },
+              { title: "Silvicultura", icon: <Trees />, link: "/atividades#silvicultura", img: "https://fazendafundamento.agroarkafla.com/assets/images/agro-arkafla-silvicultura-1-183x217.jpg", cols: "md:col-span-12" }
             ].map((item, i) => (
               <motion.div
                 key={item.title}

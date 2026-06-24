@@ -51,7 +51,7 @@ export const QuemSomos = () => {
 
           <div className="lg:w-1/2 relative">
             <img 
-              src="https://www.agroarkafla.com.br/assets/images/agro-gado-holandes-castro-pr-castro-fazenda-de-gado-794x523.png" 
+              src="https://fazendafundamento.agroarkafla.com/assets/images/agro-gado-holandes-castro-pr-castro-fazenda-de-gado-794x523.png" 
               alt="Fazenda Fundamento" 
               className="rounded-3xl shadow-2xl relative z-10"
               referrerPolicy="no-referrer"
