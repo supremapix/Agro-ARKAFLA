@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "experimentalDecorators": true,
-    "useDefineForClassFields": false,
     "module": "ESNext",
     "lib": [
       "ES2022",
@@ -12,15 +10,18 @@
     "skipLibCheck": true,
     "moduleResolution": "bundler",
     "isolatedModules": true,
-    "moduleDetection": "force",
-    "allowJs": true,
+    "esModuleInterop": true,
     "jsx": "react-jsx",
-    "paths": {
-      "@/*": [
-        "./*"
-      ]
-    },
-    "allowImportingTsExtensions": true,
-    "noEmit": true
-  }
+    "noEmit": true,
+    "strict": true
+  },
+  "include": [
+    "src/App.tsx",
+    "src/main.tsx",
+    "src/site-data.ts",
+    "src/components/FloatingActions.tsx",
+    "src/components/SupremaCredit.tsx",
+    "scripts/prerender.tsx",
+    "vite.config.ts"
+  ]
 }

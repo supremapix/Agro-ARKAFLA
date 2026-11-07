@@ -1,1 +1,2 @@
-/*    /index.html   200
+# As páginas estáticas são geradas no build. Não usar fallback SPA.
+/* /404.html 404

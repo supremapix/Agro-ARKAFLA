@@ -1,0 +1,45 @@
+{
+  "path": "/",
+  "icon": {
+    "desktop": {
+      "darkIconTransformation": {
+        "type": "none",
+        "backgroundColor": "#ffffff",
+        "backgroundRadius": 0.7,
+        "imageScale": 0.7,
+        "brightness": 1
+      },
+      "darkIconType": "none",
+      "regularIconTransformation": {
+        "type": "background",
+        "brightness": 1,
+        "backgroundColor": "#f8f6ef",
+        "backgroundRadius": 0.08,
+        "imageScale": 0.9
+      }
+    },
+    "touch": {
+      "transformation": {
+        "type": "background",
+        "brightness": 1,
+        "backgroundColor": "#f8f6ef",
+        "backgroundRadius": 0,
+        "imageScale": 0.85
+      },
+      "appTitle": "Agro Arkafla"
+    },
+    "webAppManifest": {
+      "transformation": {
+        "type": "background",
+        "brightness": 1,
+        "backgroundColor": "#f8f6ef",
+        "backgroundRadius": 0,
+        "imageScale": 0.8
+      },
+      "name": "Agro Arkafla",
+      "shortName": "Arkafla",
+      "backgroundColor": "#f8f6ef",
+      "themeColor": "#183e2f"
+    }
+  }
+}

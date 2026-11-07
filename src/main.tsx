@@ -1,16 +1,10 @@
-import {StrictMode} from 'react';
-import {createRoot} from 'react-dom/client';
-import App from './App.tsx';
+import React from 'react';
+import {createRoot,hydrateRoot} from 'react-dom/client';
+import App from './App';
+import {pages} from './site-data';
 import './index.css';
-
-const root = createRoot(document.getElementById('root')!);
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-);
-
-// Trigger pre-rendering
-setTimeout(() => {
-  document.dispatchEvent(new Event('custom-render-trigger'));
-}, 1000);
+const path=window.location.pathname.replace(/\/$/,'')||'/';
+const root=document.getElementById('root')!;
+const app=<App path={pages[path]?path:'/404'}/>;
+if(root.hasChildNodes()) hydrateRoot(root,app); else createRoot(root).render(app);
+if('serviceWorker' in navigator) navigator.serviceWorker.getRegistrations().then(regs=>regs.forEach(r=>r.unregister())).catch(()=>{});
